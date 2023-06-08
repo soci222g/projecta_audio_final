@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D2913466-A7F9-41F6-A869-A6AC7B6D3625}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="ambient_emiter" ID="{D2913466-A7F9-41F6-A869-A6AC7B6D3625}" PersistMode="Standalone"/>
+	</AudioObjects>
+</WwiseDocument>

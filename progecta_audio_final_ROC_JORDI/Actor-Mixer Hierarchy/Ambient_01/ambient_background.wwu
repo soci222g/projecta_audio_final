@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{401BF8F0-C85D-4262-BD9D-34167AC67124}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="ambient_background" ID="{401BF8F0-C85D-4262-BD9D-34167AC67124}" PersistMode="Standalone"/>
+	</AudioObjects>
+</WwiseDocument>
