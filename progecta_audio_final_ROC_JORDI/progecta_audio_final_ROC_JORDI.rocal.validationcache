@@ -20,8 +20,11 @@
 	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1686235203" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Game Parameters\Factory Soundseed Air Game Syncs.wwu" DateLow="1686235203" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Game Parameters\Default Work Unit.wwu" DateLow="1686235203" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Game Parameters\background.wwu" DateLow="1686238081" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Events\UI.wwu" DateLow="1686235203" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Events\Default Work Unit.wwu" DateLow="1686235203" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Events\enviroment.wwu" DateLow="1686238081" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Events\Default Work Unit.wwu" DateLow="1686238081" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Events\backgorund.wwu" DateLow="1686238081" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Effects\Factory Reflect.wwu" DateLow="1686235203" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Effects\Factory McDSP Effects.wwu" DateLow="1686235203" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Effects\Factory Mastering Suite.wwu" DateLow="1686235203" DateHigh="0"/>
@@ -43,6 +46,6 @@
 	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Attenuations\Default Work Unit.wwu" DateLow="1686235203" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Actor-Mixer Hierarchy\UI\UI_work.wwu" DateLow="1686235203" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1686235203" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Actor-Mixer Hierarchy\Ambient_01\ambient_emiter.wwu" DateLow="1686235203" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Actor-Mixer Hierarchy\Ambient_01\ambient_background.wwu" DateLow="1686235203" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Actor-Mixer Hierarchy\Ambient_01\ambient_emiter.wwu" DateLow="1686238081" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\rocal\OneDrive\Documentos\GitHub\repos\projecta_audio_final\progecta_audio_final_ROC_JORDI\Actor-Mixer Hierarchy\Ambient_01\ambient_background.wwu" DateLow="1686238081" DateHigh="0"/>
 </ValidationCache>
