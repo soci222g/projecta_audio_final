@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6D2846B6-2437-4E5E-A65F-29170C1C23F4}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="surface" ID="{6D2846B6-2437-4E5E-A65F-29170C1C23F4}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="surface_impact" ID="{EDBA6BD6-2352-409F-A68C-730ED940EA2B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="7"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

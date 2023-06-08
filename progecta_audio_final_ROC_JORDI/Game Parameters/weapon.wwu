@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{15F6A885-83E5-4496-862A-3B62A05A5F8C}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="weapon" ID="{15F6A885-83E5-4496-862A-3B62A05A5F8C}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="weapon_impact" ID="{0A3E9BB7-5CE7-4E61-B4B2-8B73CA08D31F}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="6"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

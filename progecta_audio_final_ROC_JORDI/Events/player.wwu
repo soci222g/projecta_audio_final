@@ -4,6 +4,7 @@
 		<WorkUnit Name="player" ID="{AE77D80B-2842-46B5-8438-A1DB4CAEBA9C}" OwnerID="{8EAE4AD7-7404-4CD0-A223-EAE2FEC265E2}" PersistMode="Nested">
 			<ChildrenList>
 				<WorkUnit Name="footsteps" ID="{DFCE86A6-5CA6-4225-A4FC-BA98EB191576}" PersistMode="Reference"/>
+				<WorkUnit Name="impact" ID="{83FCC9FD-2F02-4838-B83C-62D40A95E214}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

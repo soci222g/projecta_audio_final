@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{83FCC9FD-2F02-4838-B83C-62D40A95E214}" SchemaVersion="110" RootDocumentID="{8EAE4AD7-7404-4CD0-A223-EAE2FEC265E2}" ParentDocumentID="{AE77D80B-2842-46B5-8438-A1DB4CAEBA9C}">
+	<Events>
+		<WorkUnit Name="impact" ID="{83FCC9FD-2F02-4838-B83C-62D40A95E214}" OwnerID="{AE77D80B-2842-46B5-8438-A1DB4CAEBA9C}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="wapons_impact" ID="{9D0A011C-E472-4127-84AA-79C3C36F9F52}">
+					<ChildrenList>
+						<Action Name="" ID="{D9106477-65BD-48EB-BE7B-A8274EF1FF81}" ShortID="775319723">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="weapon_impact" ID="{0A3E9BB7-5CE7-4E61-B4B2-8B73CA08D31F}" WorkUnitID="{15F6A885-83E5-4496-862A-3B62A05A5F8C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{59F2EA1F-778C-485D-A835-4F1C4913065E}" ShortID="820940638">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="surface_impact" ID="{EDBA6BD6-2352-409F-A68C-730ED940EA2B}" WorkUnitID="{6D2846B6-2437-4E5E-A65F-29170C1C23F4}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0FD29776-F2FF-4203-AC78-27E4F88C583D}" ShortID="180926491">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="surface" ID="{3F4F3B4A-BED5-4586-BC68-1A3878BC6682}" WorkUnitID="{563BFDFE-C0EE-4F29-A6F5-7337541DF5A6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
