@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E914B090-A1CC-4A2F-9B30-5ED499DC1623}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="walk" ID="{E914B090-A1CC-4A2F-9B30-5ED499DC1623}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Surface_Type" ID="{94927DF5-0657-4E93-91B4-88585EE782BD}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="2"/>
+						<Property Name="Max" Type="Real64" Value="7"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

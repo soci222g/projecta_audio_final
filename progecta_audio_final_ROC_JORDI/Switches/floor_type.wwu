@@ -4,6 +4,9 @@
 		<WorkUnit Name="floor_type" ID="{8A9C2C97-A15F-4595-BCA3-12B30DE42758}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchGroup Name="type_of_floor" ID="{8FD848E8-6954-42EE-89ED-37AE506CF750}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Switch Name="wood" ID="{173A4B98-CDB1-444A-8089-807E90671C28}"/>
 						<Switch Name="dirt" ID="{97190305-9938-484B-9596-CEAE92D7ED80}"/>
@@ -13,6 +16,56 @@
 						<Switch Name="water" ID="{647C2741-A416-4A38-A963-93CB1209505A}"/>
 						<Switch Name="grass" ID="{E6FB58DA-C780-4A1C-BE8D-55C8D37FA333}"/>
 					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Surface_Type" ID="{94927DF5-0657-4E93-91B4-88585EE782BD}"/>
+						<Curve Name="" ID="{B7C8D876-8CA1-4B9B-ABCB-1FAD82C04C05}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>4</XPos>
+									<YPos>5</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>5</XPos>
+									<YPos>6</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>6</XPos>
+									<YPos>7</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>7</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
 				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>

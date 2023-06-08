@@ -12,6 +12,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{75E134CB-12EF-4F2D-82E1-8D3687006D04}" ShortID="983050184">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="time" ID="{1C1F6311-94B6-4D2B-B8B6-B5AF564E7E5E}" WorkUnitID="{18E42345-3E1F-4EF5-B74D-E3119FAB500B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="time_desert" ID="{3A79056B-5D93-458B-92DD-7D521B98688D}">
@@ -23,21 +33,34 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{3F302FF7-510B-4E3D-93A6-22CCD1DA6474}" ShortID="242475676">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="time" ID="{1C1F6311-94B6-4D2B-B8B6-B5AF564E7E5E}" WorkUnitID="{18E42345-3E1F-4EF5-B74D-E3119FAB500B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="time_dungeon" ID="{E520C7D7-200F-45E9-B61F-CC5F14BD85BE}">
 					<ChildrenList>
-						<Action Name="" ID="{84E86E27-7E85-47F4-8E4C-E973116C0E0D}" ShortID="465544212">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="time_of_Day_cave" ID="{C1E440BE-0AFA-41C4-8E1A-177A25E15065}" WorkUnitID="{401BF8F0-C85D-4262-BD9D-34167AC67124}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{84447B3F-49F7-4886-B104-44593851623C}" ShortID="619845515">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="time_of_Day_dungeon" ID="{D2F35DEC-3554-406B-901E-DC017D6CFCAB}" WorkUnitID="{401BF8F0-C85D-4262-BD9D-34167AC67124}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D527CFCD-4A4E-42E5-B45C-9928086ED499}" ShortID="920319845">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="time" ID="{1C1F6311-94B6-4D2B-B8B6-B5AF564E7E5E}" WorkUnitID="{18E42345-3E1F-4EF5-B74D-E3119FAB500B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -52,6 +75,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{8BC314A8-3A3D-4C20-B3F1-DBDDF420C42C}" ShortID="855135714">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="time" ID="{1C1F6311-94B6-4D2B-B8B6-B5AF564E7E5E}" WorkUnitID="{18E42345-3E1F-4EF5-B74D-E3119FAB500B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="time_forest" ID="{19D4C220-EB5E-4305-9EB5-BE9BA6024B46}">
@@ -60,6 +94,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="time_of_Day_forest" ID="{AC0C4EE9-521C-43DE-8D6D-D8BF3F04D01C}" WorkUnitID="{401BF8F0-C85D-4262-BD9D-34167AC67124}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E61D4105-2C38-4F7B-B46F-7F470D90C70A}" ShortID="337727868">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="time" ID="{1C1F6311-94B6-4D2B-B8B6-B5AF564E7E5E}" WorkUnitID="{18E42345-3E1F-4EF5-B74D-E3119FAB500B}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
