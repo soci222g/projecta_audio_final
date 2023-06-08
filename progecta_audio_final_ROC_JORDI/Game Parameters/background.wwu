@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D3644BA1-9DFC-4AA8-AA33-9E42B37379A7}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="background" ID="{D3644BA1-9DFC-4AA8-AA33-9E42B37379A7}" PersistMode="Standalone"/>
+	</GameParameters>
+</WwiseDocument>

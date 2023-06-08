@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AFBC0F00-1CE4-448B-BA07-BD6F6C2C164E}" SchemaVersion="110" RootDocumentID="{8EAE4AD7-7404-4CD0-A223-EAE2FEC265E2}" ParentDocumentID="{FBC79D8D-B72C-429F-8986-ADBA85EB8DF6}">
+	<Events>
+		<WorkUnit Name="backgorund" ID="{AFBC0F00-1CE4-448B-BA07-BD6F6C2C164E}" OwnerID="{FBC79D8D-B72C-429F-8986-ADBA85EB8DF6}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="amb_forest_night_background_loop_02" ID="{3172DD7C-8784-41D0-812A-B3C34090672E}">
+					<ChildrenList>
+						<Action Name="" ID="{4ACC332B-B400-4906-8FF1-186A869199F1}" ShortID="300559256">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="amb_forest_night_background_loop_02" ID="{BDA5D432-9834-415D-8554-D16FEBD36765}" WorkUnitID="{401BF8F0-C85D-4262-BD9D-34167AC67124}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
