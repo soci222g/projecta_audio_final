@@ -3,6 +3,17 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{70CF2FFA-F452-4859-8EA1-26741566BAD1}">
 			<PropertyList>
+				<Property Name="Event Action List\{0A207666-568C-441C-BC54-F2EC9EA818E1}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{255BED38-4A48-4641-8127-B7635ABB1086}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3159878B-C314-448F-BB93-52A77811EE5D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{626BE05B-B52A-4E29-BBFB-CC834230FEEA}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{700BFC2E-66D4-4858-AEB2-33ABE041B3CF}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{88068225-59FE-4A21-929A-D26352666BC4}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8ACB3D4F-8C05-4513-B728-0519B3831E20}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9FBCB5AF-65BC-4520-971B-03B2DAAE67FE}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C93ACD3C-48F2-4485-A2B2-332D5430A0A6}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D29CAD2E-1631-475C-BD8F-597E3AACA68C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FC09E854-F90F-4259-A9ED-4507BCC7E594}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -18,6 +29,7 @@
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Windows"/>
+				<Property Name="General\SourceControlPluginID" Type="string" Value="{C403A906-0C19-4ED5-808E-748707065301}"/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
