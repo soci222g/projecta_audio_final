@@ -3,12 +3,63 @@
 	<Events>
 		<WorkUnit Name="backgorund" ID="{AFBC0F00-1CE4-448B-BA07-BD6F6C2C164E}" OwnerID="{FBC79D8D-B72C-429F-8986-ADBA85EB8DF6}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="amb_forest_night_background_loop_02" ID="{3172DD7C-8784-41D0-812A-B3C34090672E}">
+				<Event Name="time_cave" ID="{CCD07F7D-2A56-47FF-86F8-98C60848E147}">
 					<ChildrenList>
-						<Action Name="" ID="{4ACC332B-B400-4906-8FF1-186A869199F1}" ShortID="300559256">
+						<Action Name="" ID="{08DE64F6-5311-4404-B5A5-ACF53EC25685}" ShortID="986238463">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="amb_forest_night_background_loop_02" ID="{BDA5D432-9834-415D-8554-D16FEBD36765}" WorkUnitID="{401BF8F0-C85D-4262-BD9D-34167AC67124}"/>
+									<ObjectRef Name="time_of_Day_cave" ID="{C1E440BE-0AFA-41C4-8E1A-177A25E15065}" WorkUnitID="{401BF8F0-C85D-4262-BD9D-34167AC67124}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="time_desert" ID="{3A79056B-5D93-458B-92DD-7D521B98688D}">
+					<ChildrenList>
+						<Action Name="" ID="{A062EC50-1C95-4547-B3CB-D5ED777B21FC}" ShortID="234184456">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="time_of_Day_desert" ID="{42585B04-F835-4BCB-9D61-F6B9865D5A16}" WorkUnitID="{401BF8F0-C85D-4262-BD9D-34167AC67124}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="time_dungeon" ID="{E520C7D7-200F-45E9-B61F-CC5F14BD85BE}">
+					<ChildrenList>
+						<Action Name="" ID="{84E86E27-7E85-47F4-8E4C-E973116C0E0D}" ShortID="465544212">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="time_of_Day_cave" ID="{C1E440BE-0AFA-41C4-8E1A-177A25E15065}" WorkUnitID="{401BF8F0-C85D-4262-BD9D-34167AC67124}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{84447B3F-49F7-4886-B104-44593851623C}" ShortID="619845515">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="time_of_Day_dungeon" ID="{D2F35DEC-3554-406B-901E-DC017D6CFCAB}" WorkUnitID="{401BF8F0-C85D-4262-BD9D-34167AC67124}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="time_vilage" ID="{B3DA1A5F-1B25-420A-8C69-F6581C731799}">
+					<ChildrenList>
+						<Action Name="" ID="{266810C8-7C04-46E2-B9CD-F81DE196FBB1}" ShortID="274366177">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="time_of_Day_vilage" ID="{C89741FE-A16E-4136-B9EA-D4BCE5EFFC64}" WorkUnitID="{401BF8F0-C85D-4262-BD9D-34167AC67124}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="time_forest" ID="{19D4C220-EB5E-4305-9EB5-BE9BA6024B46}">
+					<ChildrenList>
+						<Action Name="" ID="{9A306151-3B85-4DD9-82E6-BE71602BABD1}" ShortID="777210861">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="time_of_Day_forest" ID="{AC0C4EE9-521C-43DE-8D6D-D8BF3F04D01C}" WorkUnitID="{401BF8F0-C85D-4262-BD9D-34167AC67124}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

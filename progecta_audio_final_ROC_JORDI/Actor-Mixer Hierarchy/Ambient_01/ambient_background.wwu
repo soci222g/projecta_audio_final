@@ -31,30 +31,44 @@
 									<ObjectRef Name="type" ID="{DA3B1A4A-5CC3-413C-8D9B-37691A2CD274}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
 								</Reference>
 							</ReferenceList>
+							<GroupingInfo/>
+						</SwitchContainer>
+						<SwitchContainer Name="time_of_Day_dungeon" ID="{D2F35DEC-3554-406B-901E-DC017D6CFCAB}" ShortID="1037983814">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="timeOfDay" ID="{3976BD21-B36F-4419-95F5-40B560A0C923}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
+								</Reference>
+							</ReferenceList>
 							<ChildrenList>
-								<SwitchContainer Name="time_of_Day_vilage" ID="{C89741FE-A16E-4136-B9EA-D4BCE5EFFC64}" ShortID="409575235">
+								<RandomSequenceContainer Name="night" ID="{C4AF8189-AFCD-42C3-9329-B586AA12A605}" ShortID="648998779">
 									<PropertyList>
-										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
 										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
-										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
 										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="timeOfDay" ID="{3976BD21-B36F-4419-95F5-40B560A0C923}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
-										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="night" ID="{17B323F1-4EE8-4515-A06E-7DF3CAB3951D}" ShortID="1045121840">
+										<Sound Name="BAS_amb_dungeon_day_background_loop_02" ID="{0BD5730C-6437-4588-AAA2-C3419456789D}" ShortID="1034103054">
 											<PropertyList>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -65,137 +79,37 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="BAS_amb_village_night_background_loop_01" ID="{9D437FBD-D1D3-429B-AF75-4AE5AEFF12B8}" ShortID="1004792380">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_amb_village_night_background_loop_01" ID="{16053254-F1B8-4A05-ACD2-6739C5965F15}">
-															<Language>SFX</Language>
-															<AudioFile>BAS_amb_village_night_background_loop_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="182324991"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_amb_village_night_background_loop_01" ID="{16053254-F1B8-4A05-ACD2-6739C5965F15}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												<AudioFileSource Name="BAS_amb_dungeon_day_background_loop_01" ID="{5C116CAC-23DE-4D83-A170-9DC8387CA65D}">
+													<Language>SFX</Language>
+													<AudioFile>BAS_amb_dungeon_day_background_loop_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="577580913"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="day" ID="{84A6BCDA-48F3-468A-8BA2-D4C42E5E1A62}" ShortID="714470664">
-											<PropertyList>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="BAS_amb_village_day_background_loop_01" ID="{17A693F0-E188-4A16-8E41-0A89AAE8C549}" ShortID="49826680">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_amb_village_day_background_loop_01" ID="{A492CF0C-C4D9-442B-83FF-DF6D1CF09BD1}">
-															<Language>SFX</Language>
-															<AudioFile>BAS_amb_village_day_background_loop_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="449136382"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_amb_village_day_background_loop_01" ID="{A492CF0C-C4D9-442B-83FF-DF6D1CF09BD1}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_amb_dungeon_day_background_loop_01" ID="{5C116CAC-23DE-4D83-A170-9DC8387CA65D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="day" ID="{84A6BCDA-48F3-468A-8BA2-D4C42E5E1A62}"/>
-												<PropertyList>
-													<Property Name="FadeInTime" Type="Real64">
-														<ValueList>
-															<Value>5</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="night" ID="{17B323F1-4EE8-4515-A06E-7DF3CAB3951D}"/>
-												<PropertyList>
-													<Property Name="FadeInTime" Type="Real64">
-														<ValueList>
-															<Value>5</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="night" ID="{AE8E9176-91D3-4FEB-8C08-46ECDE412028}"/>
-												<ItemList>
-													<ItemRef Name="night" ID="{17B323F1-4EE8-4515-A06E-7DF3CAB3951D}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}"/>
-												<ItemList>
-													<ItemRef Name="day" ID="{84A6BCDA-48F3-468A-8BA2-D4C42E5E1A62}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
-								<SwitchContainer Name="time_of_Day_dungeon" ID="{D2F35DEC-3554-406B-901E-DC017D6CFCAB}" ShortID="1037983814">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="day" ID="{6EE994C9-9A51-4DCF-B27E-7C143B9D466F}" ShortID="781163535">
 									<PropertyList>
-										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
 										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
-										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
 										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="timeOfDay" ID="{3976BD21-B36F-4419-95F5-40B560A0C923}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
-										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="night" ID="{C4AF8189-AFCD-42C3-9329-B586AA12A605}" ShortID="648998779">
+										<Sound Name="BAS_amb_dungeon_day_background_loop_01" ID="{E2C73424-7C7D-4A29-977C-6C817D0D4DF1}" ShortID="20924988">
 											<PropertyList>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -206,556 +120,632 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="BAS_amb_dungeon_day_background_loop_02" ID="{0BD5730C-6437-4588-AAA2-C3419456789D}" ShortID="1034103054">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_amb_dungeon_day_background_loop_01" ID="{5C116CAC-23DE-4D83-A170-9DC8387CA65D}">
-															<Language>SFX</Language>
-															<AudioFile>BAS_amb_dungeon_day_background_loop_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="577580913"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_amb_dungeon_day_background_loop_01" ID="{5C116CAC-23DE-4D83-A170-9DC8387CA65D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												<AudioFileSource Name="BAS_amb_dungeon_day_background_loop_01" ID="{ECE787EF-E596-4562-95B8-23C314EC7EF5}">
+													<Language>SFX</Language>
+													<AudioFile>BAS_amb_dungeon_day_background_loop_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="577580913"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="day" ID="{6EE994C9-9A51-4DCF-B27E-7C143B9D466F}" ShortID="781163535">
-											<PropertyList>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="BAS_amb_dungeon_day_background_loop_01" ID="{E2C73424-7C7D-4A29-977C-6C817D0D4DF1}" ShortID="20924988">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_amb_dungeon_day_background_loop_01" ID="{ECE787EF-E596-4562-95B8-23C314EC7EF5}">
-															<Language>SFX</Language>
-															<AudioFile>BAS_amb_dungeon_day_background_loop_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="577580913"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_amb_dungeon_day_background_loop_01" ID="{ECE787EF-E596-4562-95B8-23C314EC7EF5}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_amb_dungeon_day_background_loop_01" ID="{ECE787EF-E596-4562-95B8-23C314EC7EF5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="night" ID="{C4AF8189-AFCD-42C3-9329-B586AA12A605}"/>
-												<PropertyList>
-													<Property Name="FadeInTime" Type="Real64">
-														<ValueList>
-															<Value>5</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="day" ID="{6EE994C9-9A51-4DCF-B27E-7C143B9D466F}"/>
-												<PropertyList>
-													<Property Name="FadeInTime" Type="Real64">
-														<ValueList>
-															<Value>5</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="night" ID="{AE8E9176-91D3-4FEB-8C08-46ECDE412028}"/>
-												<ItemList>
-													<ItemRef Name="night" ID="{C4AF8189-AFCD-42C3-9329-B586AA12A605}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}"/>
-												<ItemList>
-													<ItemRef Name="day" ID="{6EE994C9-9A51-4DCF-B27E-7C143B9D466F}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
-								<SwitchContainer Name="time_of_Day_desert" ID="{42585B04-F835-4BCB-9D61-F6B9865D5A16}" ShortID="790693174">
-									<PropertyList>
-										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="timeOfDay" ID="{3976BD21-B36F-4419-95F5-40B560A0C923}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="night" ID="{161B8E98-457A-4B25-89F4-254686956BA8}" ShortID="612593252">
-											<PropertyList>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="BAS_amb_desert_night_background_loop_01" ID="{123B4B64-B954-4AD2-91AB-CD72CA5FAFF0}" ShortID="116583065">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_amb_desert_night_background_loop_01" ID="{6B817752-3706-4DAD-AA34-4F5E1C9CF63F}">
-															<Language>SFX</Language>
-															<AudioFile>BAS_amb_desert_night_background_loop_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="335337907"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_amb_desert_night_background_loop_01" ID="{6B817752-3706-4DAD-AA34-4F5E1C9CF63F}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="day" ID="{097D2749-9C86-4B6C-9EF4-03CE6B60D165}" ShortID="82125599">
-											<PropertyList>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="BAS_amb_desert_day_background_loop_01" ID="{15F585E7-1B0A-4D4D-AE4D-3F919BD8E253}" ShortID="162330137">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_amb_desert_day_background_loop_01" ID="{B159D7B8-8FFC-420F-B0FD-01E11446ECFD}">
-															<Language>SFX</Language>
-															<AudioFile>BAS_amb_desert_day_background_loop_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="946800727"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_amb_desert_day_background_loop_01" ID="{B159D7B8-8FFC-420F-B0FD-01E11446ECFD}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="day" ID="{097D2749-9C86-4B6C-9EF4-03CE6B60D165}"/>
-												<PropertyList>
-													<Property Name="FadeInTime" Type="Real64">
-														<ValueList>
-															<Value>5</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="night" ID="{161B8E98-457A-4B25-89F4-254686956BA8}"/>
-												<PropertyList>
-													<Property Name="FadeInTime" Type="Real64">
-														<ValueList>
-															<Value>5</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="night" ID="{AE8E9176-91D3-4FEB-8C08-46ECDE412028}"/>
-												<ItemList>
-													<ItemRef Name="night" ID="{161B8E98-457A-4B25-89F4-254686956BA8}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}"/>
-												<ItemList>
-													<ItemRef Name="day" ID="{097D2749-9C86-4B6C-9EF4-03CE6B60D165}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
-								<SwitchContainer Name="time_of_Day_cave" ID="{C1E440BE-0AFA-41C4-8E1A-177A25E15065}" ShortID="199245313">
-									<PropertyList>
-										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="timeOfDay" ID="{3976BD21-B36F-4419-95F5-40B560A0C923}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="night" ID="{CC2E3582-17ED-44B4-8C80-1E62B711C8E8}" ShortID="457295526">
-											<PropertyList>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="BAS_amb_cave_background_LP" ID="{7ABF2CD5-51B4-4FBF-A513-CE41B986B7AC}" ShortID="134103981">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_amb_cave_background_LP" ID="{7CEA1427-72AC-415F-A11F-650208B041E4}">
-															<Language>SFX</Language>
-															<AudioFile>BAS_amb_cave_background_LP.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="487045919"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_amb_cave_background_LP" ID="{7CEA1427-72AC-415F-A11F-650208B041E4}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="day" ID="{A6A65584-E9E5-4D66-A41A-E0BCDF071D47}" ShortID="918257008">
-											<PropertyList>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="BAS_amb_cave_background_LP_01" ID="{F589497C-6B3B-4E29-9188-B8964420CBF3}" ShortID="146241112">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_amb_cave_background_LP" ID="{78AC99A5-7C4B-4878-8AD5-4881ECE4EFE0}">
-															<Language>SFX</Language>
-															<AudioFile>BAS_amb_cave_background_LP.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="487045919"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_amb_cave_background_LP" ID="{78AC99A5-7C4B-4878-8AD5-4881ECE4EFE0}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="night" ID="{CC2E3582-17ED-44B4-8C80-1E62B711C8E8}"/>
-												<PropertyList>
-													<Property Name="FadeInTime" Type="Real64">
-														<ValueList>
-															<Value>5</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="day" ID="{A6A65584-E9E5-4D66-A41A-E0BCDF071D47}"/>
-												<PropertyList>
-													<Property Name="FadeInTime" Type="Real64">
-														<ValueList>
-															<Value>5</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="night" ID="{AE8E9176-91D3-4FEB-8C08-46ECDE412028}"/>
-												<ItemList>
-													<ItemRef Name="night" ID="{CC2E3582-17ED-44B4-8C80-1E62B711C8E8}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}"/>
-												<ItemList>
-													<ItemRef Name="day" ID="{A6A65584-E9E5-4D66-A41A-E0BCDF071D47}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
-								<SwitchContainer Name="time_of_Day_forest" ID="{AC0C4EE9-521C-43DE-8D6D-D8BF3F04D01C}" ShortID="1028294966">
-									<PropertyList>
-										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-										</Reference>
-										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-										</Reference>
-										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="timeOfDay" ID="{3976BD21-B36F-4419-95F5-40B560A0C923}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="night" ID="{4C3A71A3-C36B-4ACA-A923-6FD0D995592B}" ShortID="475341373">
-											<PropertyList>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="amb_forest_night_background_loop_02" ID="{BDA5D432-9834-415D-8554-D16FEBD36765}" ShortID="1015747437">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="amb_forest_night_background_loop_02" ID="{20509BE8-BD77-4E54-B0BC-D7A640F3AB1F}">
-															<Language>SFX</Language>
-															<AudioFile>amb_forest_night_background_loop_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="917296139"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="amb_forest_night_background_loop_02" ID="{20509BE8-BD77-4E54-B0BC-D7A640F3AB1F}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="day" ID="{6185A5FA-0FC1-4101-8C98-134C70CF9D43}" ShortID="76080202">
-											<PropertyList>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="BAS_amb_forest_day_background_loop_01" ID="{320C01B0-C649-442F-ADA7-5930734AA460}" ShortID="529853338">
-													<PropertyList>
-														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="BAS_amb_forest_day_background_loop_01" ID="{A2F837CD-A90C-4D7C-82EF-0A4E31ACC182}">
-															<Language>SFX</Language>
-															<AudioFile>BAS_amb_forest_day_background_loop_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="736583599"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="BAS_amb_forest_day_background_loop_01" ID="{A2F837CD-A90C-4D7C-82EF-0A4E31ACC182}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-									<GroupingInfo>
-										<GroupingBehaviorList>
-											<GroupingBehavior>
-												<ItemRef Name="night" ID="{4C3A71A3-C36B-4ACA-A923-6FD0D995592B}"/>
-												<PropertyList>
-													<Property Name="FadeInTime" Type="Real64">
-														<ValueList>
-															<Value>5</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-											</GroupingBehavior>
-											<GroupingBehavior>
-												<ItemRef Name="day" ID="{6185A5FA-0FC1-4101-8C98-134C70CF9D43}"/>
-												<PropertyList>
-													<Property Name="FadeInTime" Type="Real64">
-														<ValueList>
-															<Value>5</Value>
-														</ValueList>
-													</Property>
-												</PropertyList>
-											</GroupingBehavior>
-										</GroupingBehaviorList>
-										<GroupingList>
-											<Grouping>
-												<SwitchRef Name="night" ID="{AE8E9176-91D3-4FEB-8C08-46ECDE412028}"/>
-												<ItemList>
-													<ItemRef Name="night" ID="{4C3A71A3-C36B-4ACA-A923-6FD0D995592B}"/>
-												</ItemList>
-											</Grouping>
-											<Grouping>
-												<SwitchRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}"/>
-												<ItemList>
-													<ItemRef Name="day" ID="{6185A5FA-0FC1-4101-8C98-134C70CF9D43}"/>
-												</ItemList>
-											</Grouping>
-										</GroupingList>
-									</GroupingInfo>
-								</SwitchContainer>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="time_of_Day_desert" ID="{42585B04-F835-4BCB-9D61-F6B9865D5A16}"/>
+										<ItemRef Name="night" ID="{C4AF8189-AFCD-42C3-9329-B586AA12A605}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>5</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="time_of_Day_cave" ID="{C1E440BE-0AFA-41C4-8E1A-177A25E15065}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="time_of_Day_forest" ID="{AC0C4EE9-521C-43DE-8D6D-D8BF3F04D01C}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="time_of_Day_dungeon" ID="{D2F35DEC-3554-406B-901E-DC017D6CFCAB}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="time_of_Day_vilage" ID="{C89741FE-A16E-4136-B9EA-D4BCE5EFFC64}"/>
+										<ItemRef Name="day" ID="{6EE994C9-9A51-4DCF-B27E-7C143B9D466F}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>5</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="night" ID="{AE8E9176-91D3-4FEB-8C08-46ECDE412028}"/>
+										<ItemList>
+											<ItemRef Name="night" ID="{C4AF8189-AFCD-42C3-9329-B586AA12A605}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}"/>
+										<ItemList>
+											<ItemRef Name="day" ID="{6EE994C9-9A51-4DCF-B27E-7C143B9D466F}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="time_of_Day_desert" ID="{42585B04-F835-4BCB-9D61-F6B9865D5A16}" ShortID="790693174">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="timeOfDay" ID="{3976BD21-B36F-4419-95F5-40B560A0C923}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="night" ID="{161B8E98-457A-4B25-89F4-254686956BA8}" ShortID="612593252">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BAS_amb_desert_night_background_loop_01" ID="{123B4B64-B954-4AD2-91AB-CD72CA5FAFF0}" ShortID="116583065">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_amb_desert_night_background_loop_01" ID="{6B817752-3706-4DAD-AA34-4F5E1C9CF63F}">
+													<Language>SFX</Language>
+													<AudioFile>BAS_amb_desert_night_background_loop_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="335337907"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_amb_desert_night_background_loop_01" ID="{6B817752-3706-4DAD-AA34-4F5E1C9CF63F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="day" ID="{097D2749-9C86-4B6C-9EF4-03CE6B60D165}" ShortID="82125599">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BAS_amb_desert_day_background_loop_01" ID="{15F585E7-1B0A-4D4D-AE4D-3F919BD8E253}" ShortID="162330137">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_amb_desert_day_background_loop_01" ID="{B159D7B8-8FFC-420F-B0FD-01E11446ECFD}">
+													<Language>SFX</Language>
+													<AudioFile>BAS_amb_desert_day_background_loop_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="946800727"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_amb_desert_day_background_loop_01" ID="{B159D7B8-8FFC-420F-B0FD-01E11446ECFD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="day" ID="{097D2749-9C86-4B6C-9EF4-03CE6B60D165}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>5</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="night" ID="{161B8E98-457A-4B25-89F4-254686956BA8}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>5</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="night" ID="{AE8E9176-91D3-4FEB-8C08-46ECDE412028}"/>
+										<ItemList>
+											<ItemRef Name="night" ID="{161B8E98-457A-4B25-89F4-254686956BA8}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}"/>
+										<ItemList>
+											<ItemRef Name="day" ID="{097D2749-9C86-4B6C-9EF4-03CE6B60D165}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="time_of_Day_vilage" ID="{C89741FE-A16E-4136-B9EA-D4BCE5EFFC64}" ShortID="409575235">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="timeOfDay" ID="{3976BD21-B36F-4419-95F5-40B560A0C923}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="night" ID="{17B323F1-4EE8-4515-A06E-7DF3CAB3951D}" ShortID="1045121840">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BAS_amb_village_night_background_loop_01" ID="{9D437FBD-D1D3-429B-AF75-4AE5AEFF12B8}" ShortID="1004792380">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_amb_village_night_background_loop_01" ID="{16053254-F1B8-4A05-ACD2-6739C5965F15}">
+													<Language>SFX</Language>
+													<AudioFile>BAS_amb_village_night_background_loop_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="182324991"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_amb_village_night_background_loop_01" ID="{16053254-F1B8-4A05-ACD2-6739C5965F15}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="day" ID="{84A6BCDA-48F3-468A-8BA2-D4C42E5E1A62}" ShortID="714470664">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BAS_amb_village_day_background_loop_01" ID="{17A693F0-E188-4A16-8E41-0A89AAE8C549}" ShortID="49826680">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_amb_village_day_background_loop_01" ID="{A492CF0C-C4D9-442B-83FF-DF6D1CF09BD1}">
+													<Language>SFX</Language>
+													<AudioFile>BAS_amb_village_day_background_loop_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="449136382"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_amb_village_day_background_loop_01" ID="{A492CF0C-C4D9-442B-83FF-DF6D1CF09BD1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="day" ID="{84A6BCDA-48F3-468A-8BA2-D4C42E5E1A62}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>5</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="night" ID="{17B323F1-4EE8-4515-A06E-7DF3CAB3951D}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>5</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="night" ID="{AE8E9176-91D3-4FEB-8C08-46ECDE412028}"/>
+										<ItemList>
+											<ItemRef Name="night" ID="{17B323F1-4EE8-4515-A06E-7DF3CAB3951D}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}"/>
+										<ItemList>
+											<ItemRef Name="day" ID="{84A6BCDA-48F3-468A-8BA2-D4C42E5E1A62}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="time_of_Day_forest" ID="{AC0C4EE9-521C-43DE-8D6D-D8BF3F04D01C}" ShortID="1028294966">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="timeOfDay" ID="{3976BD21-B36F-4419-95F5-40B560A0C923}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="night" ID="{4C3A71A3-C36B-4ACA-A923-6FD0D995592B}" ShortID="475341373">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="amb_forest_night_background_loop_02" ID="{BDA5D432-9834-415D-8554-D16FEBD36765}" ShortID="1015747437">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_forest_night_background_loop_02" ID="{20509BE8-BD77-4E54-B0BC-D7A640F3AB1F}">
+													<Language>SFX</Language>
+													<AudioFile>amb_forest_night_background_loop_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="917296139"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_forest_night_background_loop_02" ID="{20509BE8-BD77-4E54-B0BC-D7A640F3AB1F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="day" ID="{6185A5FA-0FC1-4101-8C98-134C70CF9D43}" ShortID="76080202">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BAS_amb_forest_day_background_loop_01" ID="{320C01B0-C649-442F-ADA7-5930734AA460}" ShortID="529853338">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_amb_forest_day_background_loop_01" ID="{A2F837CD-A90C-4D7C-82EF-0A4E31ACC182}">
+													<Language>SFX</Language>
+													<AudioFile>BAS_amb_forest_day_background_loop_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="736583599"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_amb_forest_day_background_loop_01" ID="{A2F837CD-A90C-4D7C-82EF-0A4E31ACC182}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="night" ID="{4C3A71A3-C36B-4ACA-A923-6FD0D995592B}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>5</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="day" ID="{6185A5FA-0FC1-4101-8C98-134C70CF9D43}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>5</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="night" ID="{AE8E9176-91D3-4FEB-8C08-46ECDE412028}"/>
+										<ItemList>
+											<ItemRef Name="night" ID="{4C3A71A3-C36B-4ACA-A923-6FD0D995592B}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}"/>
+										<ItemList>
+											<ItemRef Name="day" ID="{6185A5FA-0FC1-4101-8C98-134C70CF9D43}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="time_of_Day_cave" ID="{C1E440BE-0AFA-41C4-8E1A-177A25E15065}" ShortID="199245313">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="timeOfDay" ID="{3976BD21-B36F-4419-95F5-40B560A0C923}" WorkUnitID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="night" ID="{CC2E3582-17ED-44B4-8C80-1E62B711C8E8}" ShortID="457295526">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BAS_amb_cave_background_LP" ID="{7ABF2CD5-51B4-4FBF-A513-CE41B986B7AC}" ShortID="134103981">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_amb_cave_background_LP" ID="{7CEA1427-72AC-415F-A11F-650208B041E4}">
+													<Language>SFX</Language>
+													<AudioFile>BAS_amb_cave_background_LP.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="487045919"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_amb_cave_background_LP" ID="{7CEA1427-72AC-415F-A11F-650208B041E4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="day" ID="{A6A65584-E9E5-4D66-A41A-E0BCDF071D47}" ShortID="918257008">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BAS_amb_cave_background_LP_01" ID="{F589497C-6B3B-4E29-9188-B8964420CBF3}" ShortID="146241112">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A5269511-AA39-4B5C-8FBD-332B775092B0}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EFF564DD-83C8-4332-A65F-3E3F245F1441}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BAS_amb_cave_background_LP" ID="{78AC99A5-7C4B-4878-8AD5-4881ECE4EFE0}">
+													<Language>SFX</Language>
+													<AudioFile>BAS_amb_cave_background_LP.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="487045919"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BAS_amb_cave_background_LP" ID="{78AC99A5-7C4B-4878-8AD5-4881ECE4EFE0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="night" ID="{CC2E3582-17ED-44B4-8C80-1E62B711C8E8}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>5</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="day" ID="{A6A65584-E9E5-4D66-A41A-E0BCDF071D47}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>5</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="night" ID="{AE8E9176-91D3-4FEB-8C08-46ECDE412028}"/>
+										<ItemList>
+											<ItemRef Name="night" ID="{CC2E3582-17ED-44B4-8C80-1E62B711C8E8}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}"/>
+										<ItemList>
+											<ItemRef Name="day" ID="{A6A65584-E9E5-4D66-A41A-E0BCDF071D47}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>

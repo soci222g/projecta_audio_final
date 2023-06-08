@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<WorkUnit Name="UI" ID="{9EBEFC30-221E-4135-9401-FFAD6D9F5474}" PersistMode="Reference"/>
 				<WorkUnit Name="enviroment" ID="{FBC79D8D-B72C-429F-8986-ADBA85EB8DF6}" PersistMode="Reference"/>
+				<WorkUnit Name="player" ID="{AE77D80B-2842-46B5-8438-A1DB4CAEBA9C}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

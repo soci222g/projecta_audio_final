@@ -4,13 +4,14 @@
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Virtual Acoustics\Default Work Unit.wwu" DateLow="1686132900" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Triggers\Default Work Unit.wwu" DateLow="1686132900" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Switches\Default Work Unit.wwu" DateLow="1686132900" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Switches\background.wwu" DateLow="1686238579" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\States\Default Work Unit.wwu" DateLow="1686132900" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1686132900" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\SoundBanks\Default Work Unit.wwu" DateLow="1686132900" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\SoundBanks\Default Work Unit.wwu" DateLow="1686236666" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Queries\Factory Queries.wwu" DateLow="1686132771" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Queries\Default Work Unit.wwu" DateLow="1686132900" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\progecta_audio_final_ROC_JORDI.wproj" DateLow="1686217992" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\progecta_audio_final_ROC_JORDI.user.wsettings" DateLow="1686220414" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\progecta_audio_final_ROC_JORDI.wproj" DateLow="1686238962" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\progecta_audio_final_ROC_JORDI.user.wsettings" DateLow="1686238971" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Presets\Factory Spatial Audio.wwu" DateLow="1686132771" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Presets\Factory Reflect.wwu" DateLow="1686132778" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Presets\Default Work Unit.wwu" DateLow="1686132900" DateHigh="0"/>
@@ -19,10 +20,13 @@
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Metadata\Default Work Unit.wwu" DateLow="1686132900" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1686132900" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1686132900" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Game Parameters\time.wwu" DateLow="1686238579" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Game Parameters\Factory Soundseed Air Game Syncs.wwu" DateLow="1686132778" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Game Parameters\Default Work Unit.wwu" DateLow="1686132900" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Events\UI.wwu" DateLow="1686217902" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Events\Default Work Unit.wwu" DateLow="1686217902" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Events\enviroment.wwu" DateLow="1686236666" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Events\Default Work Unit.wwu" DateLow="1686236666" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Events\backgorund.wwu" DateLow="1686238617" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Effects\Factory Reflect.wwu" DateLow="1686132778" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Effects\Factory McDSP Effects.wwu" DateLow="1686132778" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Effects\Factory Mastering Suite.wwu" DateLow="1686132779" DateHigh="0"/>
@@ -47,7 +51,7 @@
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Actor-Mixer Hierarchy\Factory Soundseed Air Objects.wwu" DateLow="1686132778" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1686216689" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Actor-Mixer Hierarchy\Ambient_01\ambient_emiter.wwu" DateLow="1686220414" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Actor-Mixer Hierarchy\Ambient_01\ambient_background.wwu" DateLow="1686220414" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\projecta\progecta_audio_final_ROC_JORDI\Actor-Mixer Hierarchy\Ambient_01\ambient_background.wwu" DateLow="1686238617" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\progecta_audio_final_ROC_JORDI\Virtual Acoustics\Factory Acoustic Textures.wwu" DateLow="1686132771" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\progecta_audio_final_ROC_JORDI\Virtual Acoustics\Default Work Unit.wwu" DateLow="1686132900" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\WwiseProjects\progecta_audio_final_ROC_JORDI\Triggers\Default Work Unit.wwu" DateLow="1686132900" DateHigh="0"/>

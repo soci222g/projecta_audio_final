@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8A9C2C97-A15F-4595-BCA3-12B30DE42758}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="floor_type" ID="{8A9C2C97-A15F-4595-BCA3-12B30DE42758}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="type_of_floor" ID="{8FD848E8-6954-42EE-89ED-37AE506CF750}">
+					<ChildrenList>
+						<Switch Name="wood" ID="{173A4B98-CDB1-444A-8089-807E90671C28}"/>
+						<Switch Name="dirt" ID="{97190305-9938-484B-9596-CEAE92D7ED80}"/>
+						<Switch Name="rubble" ID="{3AB7BF53-8B22-4368-8D6A-9DFEC77CCC25}"/>
+						<Switch Name="sand" ID="{B5107B5D-7109-49F7-A459-558F5DB95208}"/>
+						<Switch Name="stone" ID="{F17B9C09-C5A8-409D-A4D8-B26CB70D07B7}"/>
+						<Switch Name="water" ID="{647C2741-A416-4A38-A963-93CB1209505A}"/>
+						<Switch Name="grass" ID="{E6FB58DA-C780-4A1C-BE8D-55C8D37FA333}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

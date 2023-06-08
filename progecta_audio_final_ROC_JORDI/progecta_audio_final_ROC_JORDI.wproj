@@ -11862,20 +11862,11 @@
 				<PhysicalFolder Path="Actor-Mixer Hierarchy\Ambient_01">
 					<WorkUnit Name="Ambient_01" ID="{92E57477-9C2B-4580-B7A3-3BD95D31157A}" PersistMode="Standalone"/>
 				</PhysicalFolder>
-				<PhysicalFolder Path="Actor-Mixer Hierarchy\Cave">
-					<WorkUnit Name="Cave" ID="{FB4CFB1C-1311-43C4-8301-08CE753C3C29}" PersistMode="Standalone"/>
-				</PhysicalFolder>
-				<PhysicalFolder Path="Actor-Mixer Hierarchy\Dungeons">
-					<WorkUnit Name="Dungeons" ID="{D1A9BAB0-CD9F-412C-8CAA-31FBF25F13F2}" PersistMode="Standalone"/>
-				</PhysicalFolder>
-				<PhysicalFolder Path="Actor-Mixer Hierarchy\Music">
-					<WorkUnit Name="Music" ID="{1F85CED8-023A-4F41-B985-BBB064BA62D1}" PersistMode="Standalone"/>
-				</PhysicalFolder>
-				<PhysicalFolder Path="Actor-Mixer Hierarchy\Player">
-					<WorkUnit Name="Player" ID="{2B7D5C65-1D0B-428D-A65C-13ED02240704}" PersistMode="Standalone"/>
-				</PhysicalFolder>
 				<PhysicalFolder Path="Actor-Mixer Hierarchy\UI">
 					<WorkUnit Name="UI" ID="{2E7CFB3E-B926-4516-9524-0EF966112578}" PersistMode="Standalone"/>
+				</PhysicalFolder>
+				<PhysicalFolder Path="Actor-Mixer Hierarchy\player">
+					<WorkUnit Name="player" ID="{630E02CF-B227-4442-B6B1-E41B854AD40E}" PersistMode="Standalone"/>
 				</PhysicalFolder>
 				<PhysicalFolder Path="Attenuations">
 					<WorkUnit Name="Attenuations" ID="{017BDDA0-1BB1-4CE1-8077-79594EC4585C}" PersistMode="Standalone"/>
@@ -11897,24 +11888,6 @@
 				</PhysicalFolder>
 				<PhysicalFolder Path="Events">
 					<WorkUnit Name="Events" ID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" PersistMode="Standalone"/>
-				</PhysicalFolder>
-				<PhysicalFolder Path="Events\Ambient">
-					<WorkUnit Name="Ambient" ID="{9B5C05EE-F09F-4DDE-912B-1A07BAEF9E69}" PersistMode="Standalone"/>
-				</PhysicalFolder>
-				<PhysicalFolder Path="Events\Caves">
-					<WorkUnit Name="Caves" ID="{99D7C550-B27F-4946-8EF2-3024AD7D1375}" PersistMode="Standalone"/>
-				</PhysicalFolder>
-				<PhysicalFolder Path="Events\Dungeons">
-					<WorkUnit Name="Dungeons" ID="{F4125149-FB50-49E1-8D37-7D154196871C}" PersistMode="Standalone"/>
-				</PhysicalFolder>
-				<PhysicalFolder Path="Events\Menu_sliders">
-					<WorkUnit Name="Menu_sliders" ID="{FF5EF2D0-7187-4AC5-A82D-BF54B792F9EA}" PersistMode="Standalone"/>
-				</PhysicalFolder>
-				<PhysicalFolder Path="Events\Player">
-					<WorkUnit Name="Player" ID="{A0ECC251-0A77-46A2-B2E8-02BC15258CFF}" PersistMode="Standalone"/>
-				</PhysicalFolder>
-				<PhysicalFolder Path="Events\UI">
-					<WorkUnit Name="UI" ID="{00FFE97E-64EB-419C-96F0-1D315C203463}" PersistMode="Standalone"/>
 				</PhysicalFolder>
 				<PhysicalFolder Path="Game Parameters">
 					<WorkUnit Name="Game Parameters" ID="{4025818E-097F-4A72-B692-B8A2E2663DCB}" PersistMode="Standalone"/>

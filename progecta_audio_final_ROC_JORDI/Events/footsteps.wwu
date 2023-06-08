@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DFCE86A6-5CA6-4225-A4FC-BA98EB191576}" SchemaVersion="110" RootDocumentID="{8EAE4AD7-7404-4CD0-A223-EAE2FEC265E2}" ParentDocumentID="{AE77D80B-2842-46B5-8438-A1DB4CAEBA9C}">
+	<Events>
+		<WorkUnit Name="footsteps" ID="{DFCE86A6-5CA6-4225-A4FC-BA98EB191576}" OwnerID="{AE77D80B-2842-46B5-8438-A1DB4CAEBA9C}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="fotsteps" ID="{9C22CEF3-6E92-4866-B957-124373873BE9}">
+					<ChildrenList>
+						<Action Name="" ID="{26BE16FC-A2D2-4F7E-AC1D-42D9CC42ECFD}" ShortID="414242426">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="footsteps_matireal" ID="{539DA001-8DF7-4BB3-811A-9E561F5649C5}" WorkUnitID="{11DD77FF-FB3E-4F72-9F41-8AA3FDFA26D8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
