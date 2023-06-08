@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="background" ID="{0C6D4BD8-CD65-44E8-9E2C-19B0D8D2E917}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="type" ID="{DA3B1A4A-5CC3-413C-8D9B-37691A2CD274}">
+					<ChildrenList>
+						<Switch Name="forest" ID="{6E605670-D51A-4A9D-A8D3-E86D9E5AEA97}"/>
+						<Switch Name="desert" ID="{10F198FE-012B-4AAB-9A7E-507F917DEF27}"/>
+						<Switch Name="dungeon" ID="{DC8E42F0-D468-411E-8E9D-D8E0D732958A}"/>
+						<Switch Name="cave" ID="{CEAF1B47-F5DD-4493-B0DC-73A00649D9A0}"/>
+						<Switch Name="vilage" ID="{80D69DAA-9304-4F71-9C95-133D74BB1851}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="timeOfDay" ID="{3976BD21-B36F-4419-95F5-40B560A0C923}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="night" ID="{AE8E9176-91D3-4FEB-8C08-46ECDE412028}"/>
+						<Switch Name="day" ID="{835C3C8B-39BD-4CB4-8B45-E5DCA0449DC9}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="time" ID="{1C1F6311-94B6-4D2B-B8B6-B5AF564E7E5E}"/>
+						<Curve Name="" ID="{94FE82DB-E2FA-4633-A9B8-2E57A88CE98D}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>6</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>21</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>24</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
